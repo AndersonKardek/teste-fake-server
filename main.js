@@ -16,7 +16,7 @@ function createWindow() {
         mainWindow = null;
     });
 
-    mainWindow.once('ready-to-show', () => {
+    mainWindow.once('did-finish-load', () => {
         autoUpdater.checkForUpdatesAndNotify();
     });
 }
